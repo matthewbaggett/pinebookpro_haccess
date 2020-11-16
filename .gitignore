@@ -1,0 +1,12 @@
+.idea
+version.h
+build*/
+lib/
+.build_cache/
+*.pro
+*.s#*
+*.b#*
+*.l#*
+.~lock.*
+*.lck
+*.job
