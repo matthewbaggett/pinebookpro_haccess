@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -403,6 +403,33 @@ CONN-14082</description>
 <wire x1="5.75" y1="0.1" x2="5.75" y2="-4" width="0.127" layer="21"/>
 <text x="0" y="-1.9" size="0.5" layer="25" align="center">&gt;NAME</text>
 </package>
+<package name="ATGM336H">
+<wire x1="4.85" y1="-5.05" x2="-4.85" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="-5.05" x2="-4.85" y2="5.05" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="5.05" x2="4.85" y2="5.05" width="0.127" layer="21"/>
+<wire x1="4.85" y1="5.05" x2="4.85" y2="-5.05" width="0.127" layer="21"/>
+<smd name="P$1" x="-4.85" y="4.4" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$2" x="-4.85" y="3.3" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$3" x="-4.85" y="2.2" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$4" x="-4.85" y="1.1" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$5" x="-4.85" y="0" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$6" x="-4.85" y="-1.1" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$7" x="-4.85" y="-2.2" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$8" x="-4.85" y="-3.3" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$9" x="-4.85" y="-4.4" dx="1.8" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$10" x="4.85" y="-4.4" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$11" x="4.85" y="-3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$12" x="4.85" y="-2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$13" x="4.85" y="-1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$14" x="4.85" y="0" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$15" x="4.85" y="1.1" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$16" x="4.85" y="2.2" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$17" x="4.85" y="3.3" dx="1.8" dy="0.8" layer="1"/>
+<smd name="P$18" x="4.85" y="4.4" dx="1.8" dy="0.8" layer="1"/>
+<circle x="-5.5" y="5.5" radius="0.5" width="0.1" layer="21"/>
+<text x="0" y="5.5" size="1.27" layer="25" rot="R180" align="top-center">&gt;NAME</text>
+<text x="0" y="-5.5" size="1.27" layer="25" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PINEBOOK-PRO-DAUGHTERBOARD-CONNECTOR">
@@ -552,6 +579,36 @@ CONN-14082</description>
 <text x="7.62" y="-1.27" size="1.778" layer="95" rot="R90" align="center">EXPANSION CONNECTOR</text>
 <pin name="SCL" x="-17.78" y="10.16" length="middle"/>
 <pin name="SDA" x="-17.78" y="12.7" length="middle"/>
+</symbol>
+<symbol name="ATGM336H">
+<pin name="VCC" x="-17.78" y="10.16" length="middle"/>
+<pin name="GND" x="-17.78" y="-10.16" length="middle"/>
+<pin name="/RST" x="-17.78" y="0" length="middle"/>
+<pin name="VBATT" x="-17.78" y="5.08" length="middle"/>
+<pin name="ENABLE" x="-17.78" y="-2.54" length="middle"/>
+<pin name="1PPS" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="RXD" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="TXD" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="SDA" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="VCC_RF" x="-17.78" y="7.62" length="middle"/>
+<pin name="RF_IN" x="17.78" y="10.16" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="U.FL">
+<wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="GND@0" x="-2.54" y="-5.08" visible="off" length="short" direction="pas"/>
+<pin name="SIGNAL" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
+<text x="-2.54" y="3.302" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -743,6 +800,32 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="USB0_D-" pad="P$5"/>
 <connect gate="G$1" pin="USB1_D+" pad="P$3"/>
 <connect gate="G$1" pin="USB1_D-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GPS-ATGM336H">
+<gates>
+<gate name="G$1" symbol="ATGM336H" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ATGM336H">
+<connects>
+<connect gate="G$1" pin="/RST" pad="P$9"/>
+<connect gate="G$1" pin="1PPS" pad="P$4"/>
+<connect gate="G$1" pin="ENABLE" pad="P$5"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$10 P$12"/>
+<connect gate="G$1" pin="RF_IN" pad="P$11"/>
+<connect gate="G$1" pin="RXD" pad="P$3"/>
+<connect gate="G$1" pin="SCL" pad="P$17"/>
+<connect gate="G$1" pin="SDA" pad="P$16"/>
+<connect gate="G$1" pin="TXD" pad="P$2"/>
+<connect gate="G$1" pin="VBATT" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$8"/>
+<connect gate="G$1" pin="VCC_RF" pad="P$14"/>
 </connects>
 <technologies>
 <technology name=""/>
